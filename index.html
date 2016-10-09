@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>入口</title>
+<link rel="stylesheet" href="styles/index.css">
+<!-- <link rel="stylesheet" href="styles/reset.css">
+ -->
+</head>
+
+<body>
+	<div class="wrapper">
+		<h1 id="title">Welcome to my Territory</h1>
+		<p class="manner">在您进入站点前，Ahri要和您玩个小游戏，因此您有三个方式进入这个站点：</p>
+		<p id="rule1">1 、赢这个游戏，规则在下 (｡･ω･)ﾉﾞ <br />
+		2 、寻找页面上的秘密入口 ￣ω￣<br />
+		3 、看来我对解迷还真不在行 （╯－＿－）╯╧╧   <a href="#">给我发信</a></p>
+		<div id="game">
+			<div class="left">
+				<span>目标:</span><span id="tn"></span>
+			</div>
+			<div class="middle">
+				<span>Ahri：</span>
+				<span id="ccn1"></span>
+				<span id="ccn2"></span>
+				<span id="ccn3"></span>
+			</div>
+			<div class="right">
+				<span>我：</span>
+				<span onclick="javascript:changeNumber(this); " id="ucn1">1</span>
+				<span onclick="javascript:changeNumber(this); " id="ucn2">2</span>
+				<span onclick="javascript:changeNumber(this); " id="ucn3">3</span>
+			</div>
+		</div>
+		<p id="rule2">游戏规则：这是一个您与 Ahri 一起玩的回合制游戏，您最后只要让 Ahri 说出“目标”里所示的数字，您就赢了。请直接在页面的数字上点击，比如，您想出到 5 ，就在 <a href="Home.html" class="secretaccess">5</a> 上点击即可。祝您好运！ </p>
+	</div>
+<script type="text/javascript" src="scripts/index.js"></script>
+</body>
+</html>
