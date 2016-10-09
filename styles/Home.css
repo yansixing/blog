@@ -1,0 +1,295 @@
+/*style reset*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*style reset*/
+
+
+a
+{
+	text-decoration: none;
+}
+
+body
+{
+    background: url(../images/homebg.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-color: #000;
+}   
+
+#wrapper
+{
+	max-width: 900px;
+	margin:0 auto;
+}
+
+#banner{
+	width: 150px;
+	margin: 0 auto;
+	position: relative;
+}
+
+#banner div
+{
+	width: 150px;
+	margin: 0 auto;
+}
+
+#banner h1
+{
+	width: 150px;
+	display: block;
+	text-align: right;
+	font-size: 36px;
+	font-family: "Georgia", serif;
+	background: url(../images/icon.png) no-repeat left 50%;
+	letter-spacing: 3px;
+	line-height: 36px;
+}
+
+#banner a
+{
+	display: block;
+	width: 150px;
+}
+
+#banner h1 a:link,#banner h1 a:visited
+{
+	color: #fff;
+	text-decoration: none;
+}
+
+#banner a:hover,#banner a:active
+{
+	
+}
+
+#banner div ul
+{
+	list-style-type: none;
+	height: 0;
+	overflow: hidden;
+	position: absolute;
+	left: 0;
+	top: 36px;
+}
+
+#banner div ul li a:link,#banner div ul li a:visited
+{
+	height: 25px;
+	line-height: 25px;
+	background-color: rgba(255,255,255,0.7);
+	margin-top: 5px;
+	color: rgba(40,83,200,1);
+}
+
+.user_img
+{
+	width: 98px;
+	height: 100px;
+	margin: 0 auto;
+	margin-top: 120px;
+	border-radius: 50%;
+	border:1px solid #fff;
+	box-shadow: 0 0 7px rgba( 255, 255, 255, 1);
+}
+
+.user_img:hover
+{
+	box-shadow: 0 0 12px rgba( 255, 255, 255, 1);
+}
+
+.title h2
+{
+	width: 300px;
+	margin: 0 auto;
+	margin-top: 50px;
+	border-top:3px solid rgba( 18, 157, 16, 1);
+	border-bottom: 3px solid rgba( 18, 157, 16, 1);
+	color: rgba( 40, 83, 200, 1);
+	font-family: 'Microsoft YaHei';
+	font-weight: 300;
+	font-size: 40px;
+	text-align:center;
+	letter-spacing: 3px;
+	padding: 3px;
+}
+
+.main_bottom
+{
+	margin-top: 20px;
+}
+
+.article
+{
+	color:#fff;
+	overflow: hidden;
+}
+
+.article>h3
+{
+	text-shadow: 1px 1px 3px #fff;
+	display: inline-block;
+}
+
+.article a
+{
+	text-decoration: none;
+}
+
+.article>a:link,.article>a:visited
+{
+	color:#ccc;
+	font-size:14px;
+	margin-left: 20px;
+	font-family: serif;
+	text-decoration: underline;
+}
+
+.artpage
+{
+	margin-top: 20px;
+}
+@media screen and (min-width:920px){
+	.art_left,.art_middle,.art_right
+	{
+		float: left;
+		margin-right: 10px;
+		height:300px;
+		width: 290px;
+		background-color: #000;
+	}
+}
+
+@media screen and (max-width:920px){
+	.art_left,.art_middle,.art_right
+	{
+		margin: 0 auto;
+		height:300px;
+		width: 100%;
+		background-color: #000;
+	}
+}
+
+@media screen and (min-width:920px){
+	.art_img>a
+	{
+		width: 290px;
+		display: block;
+		opacity: 0.6;
+	}
+}
+
+@media screen and (max-width:920px){
+	.art_img>a
+	{
+		width: 100%;
+		display: block;
+		opacity: 0.6;
+	}
+}
+
+.art_img>a:hover
+{
+	opacity: 1;
+}
+
+@media screen and (min-width:920px){
+	.art_img img
+	{
+		width:100%;
+	}
+}
+
+@media screen and (max-width:920px){
+	.art_img img
+	{
+		width:60%;
+		margin: 0 auto;
+	}
+}
+
+.art_img
+{
+	height:150px;
+	overflow: hidden;
+	width: 100%;
+}
+
+.header h3
+{
+	color:rgba( 40, 83, 156, 1);
+}
+
+.header p
+{
+	color: #ccc;
+}
+
+.headerlink
+{
+	text-decoration: none;
+}
+
+.header a:link,.header a:visited
+{
+	color:rgba( 40, 83, 156, 1);
+}
+
+.footer
+{
+	clear: both;
+	color: #fff;
+	margin-top: 50px;
+}
+
+.footer p
+{
+	font-size: 14px;
+	width: 900px;
+	margin:0 auto;
+	text-align: center;
+}

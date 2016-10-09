@@ -1,0 +1,71 @@
+
+
+body
+{
+    background: url(../images/homebg.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-color: #000;
+    color: #eee;
+}   
+
+.wrapper
+{
+	max-width: 900px;
+	margin:0 auto;
+}
+
+#banner h1
+{
+	width: 150px;
+	margin:0 auto;
+	text-align: right;
+	font-size: 36px;
+	font-family: "Georgia", serif;
+	background: url(../images/icon.png) no-repeat left 50%;
+	letter-spacing: 3px;
+	line-height: 36px;
+}
+
+#banner a:link,#banner a:visited
+{
+	color: #fff;
+	text-decoration: none;
+}
+
+#mainText
+{
+	background-color: rgba(255,255,255,0.2);
+	max-width: 680px;
+	height:auto;
+	padding: 10px;
+	margin: 40px 20px;
+	border-radius: 8px;
+}
+
+#mainText h3
+{
+	font-size: 26px;	
+}
+
+#mainText div
+{
+	font-size: 16px;
+	color: rgba(255,255,255,0.5);
+	margin: 5px;
+}
+
+#mainText p
+{
+	line-height: 2;
+}
+
+#mainText img
+{
+	text-align: center;
+	display: block;
+	margin: 10px 0;
+	opacity: 0.8;
+}

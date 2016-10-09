@@ -1,0 +1,95 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body
+{
+    background: url(../images/bg.jpg) no-repeat center center fixed;
+    background-size: cover;
+    background-color: #000;
+}   
+
+.wrapper
+{
+	width: 1024px;
+	margin: 0 auto;
+	position: relative;
+    top: 80px;
+    font-family: 'Microsoft YaHei';
+}
+
+#title
+{	
+	text-align: center;
+	font-family: 'Impact';
+	letter-spacing: 3px;
+    font-size: 60px;
+
+}
+
+.manner
+{
+	margin: 50px 0 20px 0;
+}
+
+#rule1
+{
+	line-height: 30px;
+	margin-left: 30px;
+}
+
+.wrapper p a:link,.wrapper p a:visited
+{
+	color: #000;
+	text-decoration: underline;
+}
+
+#game
+{
+	font-size: 36px;
+	margin-top: 50px;
+	display: flex;
+}
+
+.left,.middle,.right
+{
+	display: inline-block;;
+}
+
+.left
+{
+	-webkit-flex: none;
+    flex: none;
+    width: 150px;
+}
+
+.middle
+{
+	width: 422px;
+}
+
+.right
+{
+	width: 422px;
+}
+
+#rule2
+{
+	margin-top: 120px;
+	width: 900px;
+	font-size: 14px;
+	text-align: center;;
+}
+
+#rule2 a:link,#rule2 a:visited
+{
+	color: #000;
+	text-decoration: none;
+	cursor: text;
+}
+
+.right span:not(:first-child),.middle span:not(:first-child){
+	margin-left: 20px;
+	cursor: pointer;
+}
