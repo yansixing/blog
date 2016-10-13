@@ -1,15 +1,25 @@
 window.onload=function ()
 	{
-		var c = new Array('14','15','16','18','19','20','22','23','27','28');
-		tn = c[parseInt(Math.random()*10)]
-		document.getElementById("tn").innerHTML=tn;
+		var c = [14,15,16,18,19,20,22,23,27,28];
+		var arr = [];
+		targetNumber = c[parseInt(Math.random()*10)];
+		// for(var i = 0; i < targetNumber; i++){
+		// 	arr[i] = i + 1;
+		// }
+		// console.log(arr);
+		document.getElementById("targetNumber").innerHTML=targetNumber;
+
+		oLi = document.getElementsByClassName("ucn");
+		for(var j = 0;j < 3; j++){
+			oLi[j].addEventListener("click",changeNumber);
+		}
 	}
 
-	function changeNumber(obj)
+	function changeNumber(event)
 	{
-		tn=document.getElementById("tn").innerHTML;
-		ucn=parseInt(obj.innerHTML);
-		if((ucn%4)==((tn-1)%4)&&ucn!=(tn-1))
+		targetNumber=document.getElementById("targetNumber").innerHTML;
+		ucn=parseInt(event.target.innerHTML);
+		if((ucn%4)==((targetNumber-1)%4)&&ucn!=(targetNumber-1))
 		{ //当user choose number等于关键数时
 			ccn=parseInt(ucn)+1;
 			$("ccn1").innerHTML=ccn;
@@ -17,7 +27,7 @@ window.onload=function ()
 			$("ucn2").innerHTML=ccn+2;
 			$("ucn3").innerHTML=ccn+3;
 		}
-		else if(ucn==(tn-1))
+		else if(ucn==(targetNumber-1))
 		{
 			ccn=parseInt(ucn)+1;
 			$("ccn1").innerHTML=ccn;
@@ -28,7 +38,7 @@ window.onload=function ()
 		{
 			var number;//number为computer choose number输出的数字个数
 			number=Math.floor(ucn/4); //对ucn取整
-			number=number*4+((tn-1)%4)-ucn;
+			number=number*4+((targetNumber-1)%4)-ucn;
 			if(number<0)
 			{
 				number+=4;
@@ -59,7 +69,7 @@ window.onload=function ()
 				break;
 				default:
 			}
-			if(ccn>=(tn-3))
+			if(ccn>=(targetNumber-3))
 			{
 				$("ucn2").innerHTML="";
 				$("ucn3").innerHTML="";
