@@ -28,6 +28,8 @@ window.onload = function() {
             switch (randomNumber) {
                 case 0:
                     $("ccn1").innerHTML = ccn;
+                    $("ccn2").innerHTML = "";
+                    $("ccn3").innerHTML = "";
                     $("ucn1").innerHTML = ccn + 1;
                     $("ucn2").innerHTML = ccn + 2;
                     $("ucn3").innerHTML = ccn + 3;
@@ -35,6 +37,7 @@ window.onload = function() {
                 case 1:
                     $("ccn1").innerHTML = ccn;
                     $("ccn2").innerHTML = ccn + 1;
+                    $("ccn3").innerHTML = "";
                     $("ucn1").innerHTML = ccn + 2;
                     $("ucn2").innerHTML = ccn + 3;
                     $("ucn3").innerHTML = ccn + 4;
