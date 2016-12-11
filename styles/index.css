@@ -7,9 +7,9 @@ body
 
 .wrapper
 {
-	width: 1024px;
-	margin: 0 auto;
-	position: relative;
+    width: 1024px;
+    margin: 0 auto;
+    position: relative;
     top: 80px;
     font-family: 'Microsoft YaHei';
 }
