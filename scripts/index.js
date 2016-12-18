@@ -9,7 +9,7 @@ window.onload = function() {
     for (i = Math.floor(targetNumber / 4 - 1); i >= 0; i--) {
         keyNumbers.push((targetNumber - 1) % 4 + i * 4);
     }
-    //console.log(keyNumbers);
+    console.log(keyNumbers);
     //console.log(arr);
     $("targetNumber").innerHTML = targetNumber;
 
